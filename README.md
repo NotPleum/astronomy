@@ -1,1 +1,1 @@
-# astronomy
+# astronomy project
