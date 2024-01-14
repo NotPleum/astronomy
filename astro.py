@@ -58,7 +58,7 @@ class Moon(AstroObject):
 
         # complete this code so that this line runs
         # UNCOMMENT THE NEXT LINE
-        print(f'period of rotation around {self.planet_name} is {period_rotation:.2f} days.')
+        print(f'period of rotation around {self.planet_name} is {period_rotation:.2e} days.')
 
 
 # THIS IS AN EXAMPLE OF THE THINGS YOU SHOULD DO
@@ -83,10 +83,10 @@ moon.get_period_rotation()
 jupiter = Planet(name="Jupiter", radius=69_911, mass=1.898e27)
 
 # TASK 3: CREATE THE 4 GALLILEAN MOONS
-io = Moon(name="Io", radius=1_821.6, mass=8.9319 * 10 ** 22, semimajor_axis=421600e3, planet=jupiter)
-europa = Moon(name="Europa", radius=1_560.8, mass=4.80e22, semimajor_axis=671100e3, planet=jupiter)
-ganymede = Moon(name="Ganymede", radius=2_634.1, mass=1.48e23, semimajor_axis=1070400e3, planet=jupiter)
-callisto = Moon(name="Callisto", radius=2_410.3, mass=1.07e23, semimajor_axis=1882700e3, planet=jupiter)
+io = Moon(name="Io", radius=1815, mass=894, semimajor_axis=422, planet=jupiter)
+europa = Moon(name="Europa", radius=1569, mass=480, semimajor_axis=671, planet=jupiter)
+ganymede = Moon(name="Ganymede", radius=2631, mass=1482, semimajor_axis=1070, planet=jupiter)
+callisto = Moon(name="Callisto", radius=2400, mass=1077, semimajor_axis=1883, planet=jupiter)
 
 # TASK 4: CALL THE FUNCTIONS say_hello(), get_volume(), and get_surface_area() for JUPITER
 jupiter.say_hello()
@@ -119,11 +119,11 @@ callisto.get_period_rotation()
 pluto = Planet(name="Pluto", radius=1_188.3, mass=1.31e22)
 
 # TASK 7: CREATE THE 5 MOONS OF PLUTO
-charon = Moon(name="Charon", radius=606, mass=1.53e21, semimajor_axis=19591e3, planet=pluto)
-nix = Moon(name="Nix", radius=24.9, mass=2.6e16, semimajor_axis=48694e3, planet=pluto)
-styx = Moon(name="Styx", radius=5, mass=7.5e15, semimajor_axis=42413e3, planet=pluto)
-kerberos = Moon(name="Kerberos", radius=9.5, mass=1.65e16, semimajor_axis=57783e3, planet=pluto)
-hydra = Moon(name="Hydra", radius=20, mass=4.2*10**17, semimajor_axis=64738e1, planet=pluto)
+charon = Moon(name="Charon", radius=600, mass=0, semimajor_axis=19.7, planet=pluto)
+nix = Moon(name="Nix", radius=23, mass=0, semimajor_axis=48, planet=pluto)
+styx = Moon(name="Styx", radius=10, mass=0, semimajor_axis=42, planet=pluto)
+kerberos = Moon(name="Kerberos", radius=14, mass=0, semimajor_axis=58, planet=pluto)
+hydra = Moon(name="Hydra", radius=30.5, mass=0, semimajor_axis=65, planet=pluto)
 
 # TASK 8: CALL THE FUNCTIONS say_hello(), get_volume(), and get_surface_area() for PLUTO
 pluto.say_hello()
